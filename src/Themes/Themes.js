@@ -41,7 +41,10 @@ const Themes = createTheme({
       {
         props: { variant: "mainCheckbox" },
         style: {
-          color: "#94F6FC",
+          color: "#FFFFFF",
+          "&:hover": {
+            backgroundColor: "#94F6FC",
+          },
         },
       },
     ],
@@ -55,10 +58,13 @@ const Themes = createTheme({
     background: "#EEE",
   },
   typography: {
-    fontFamily: "Poppins",
-    fontWeight: 400,
-    fontSize: "13px",
-    lineHeight: 19.5,
+    subtitle1: {
+      fontFamily: "Poppins",
+      fontWeight: 400,
+      fontSize: "13px",
+      lineHeight: 19.5,
+    },
+
     h1: {
       fontSize: 18,
       fontWeight: 700,
@@ -74,6 +80,7 @@ const Themes = createTheme({
     color: "#50C2C9",
     underline: "none",
   },
+  shadows: ["0px 4px 10px rgba(0, 0, 0, 0.25)"],
 });
 
 export default Themes;

@@ -10,6 +10,7 @@ function App() {
         className={"margin"}
         sx={{
           width: 200,
+          boxShadow: 0,
         }}
       >
         <Typography variant={"h1"}>Register</Typography>
